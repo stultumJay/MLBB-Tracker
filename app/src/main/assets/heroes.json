@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Akai",
+    "image": "akai",
+    "ultimate": {
+      "name": "Avatar of the Guardian",
+      "cdLevel1": 54,
+      "cdLevel2": 50,
+      "cdLevel3": 46
+    }
+  },
+  {
+    "id": 2,
+    "name": "Alucard",
+    "image": "alucard",
+    "ultimate": {
+      "name": "Fission Wave",
+      "cdLevel1": 60,
+      "cdLevel2": 55,
+      "cdLevel3": 50
+    }
+  },
+  {
+    "id": 3,
+    "name": "Alice",
+    "image": "alice",
+    "ultimate": {
+      "name": "Blood Awe",
+      "cdLevel1": 45,
+      "cdLevel2": 42,
+      "cdLevel3": 39
+    }
+  },
+  {
+    "id": 4,
+    "name": "Angela",
+    "image": "angela",
+    "ultimate": {
+      "name": "Heartguard",
+      "cdLevel1": 30,
+      "cdLevel2": 28,
+      "cdLevel3": 26
+    }
+  },
+  {
+    "id": 5,
+    "name": "Argus",
+    "image": "argus",
+    "ultimate": {
+      "name": "Eternal Evil",
+      "cdLevel1": 50,
+      "cdLevel2": 45,
+      "cdLevel3": 40
+    }
+  },
+  {
+    "id": 6,
+    "name": "Atlas",
+    "image": "atlas",
+    "ultimate": {
+      "name": "Perfect Match",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 7,
+    "name": "Aurora",
+    "image": "aurora",
+    "ultimate": {
+      "name": "Frost Lockdown",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 8,
+    "name": "Balmond",
+    "image": "balmond",
+    "ultimate": {
+      "name": "Lethal Counter",
+      "cdLevel1": 25,
+      "cdLevel2": 22,
+      "cdLevel3": 19
+    }
+  },
+  {
+    "id": 9,
+    "name": "Bane",
+    "image": "bane",
+    "ultimate": {
+      "name": "Deadly Catch",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 10,
+    "name": "Barats",
+    "image": "barats",
+    "ultimate": {
+      "name": "Detona's Welcome",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 11,
+    "name": "Belerick",
+    "image": "belerick",
+    "ultimate": {
+      "name": "Ancient Seed",
+      "cdLevel1": 50,
+      "cdLevel2": 46,
+      "cdLevel3": 42
+    }
+  },
+  {
+    "id": 12,
+    "name": "Bruno",
+    "image": "bruno",
+    "ultimate": {
+      "name": "Volley Shot",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 13,
+    "name": "Carmilla",
+    "image": "carmilla",
+    "ultimate": {
+      "name": "Bloodbath",
+      "cdLevel1": 45,
+      "cdLevel2": 42,
+      "cdLevel3": 39
+    }
+  },
+  {
+    "id": 14,
+    "name": "Cecilion",
+    "image": "cecilion",
+    "ultimate": {
+      "name": "Bats Feast",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 15,
+    "name": "Chou",
+    "image": "chou",
+    "ultimate": {
+      "name": "The Way of Dragon",
+      "cdLevel1": 30,
+      "cdLevel2": 28,
+      "cdLevel3": 26
+    }
+  }
+]
