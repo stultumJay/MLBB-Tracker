@@ -1,6 +1,7 @@
 package com.example.kotlinandroidoverlayapponhomescreen.ui.screens
 
-import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.*
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -23,45 +24,84 @@ fun HeroesScreen(vm: HeroesViewModel = viewModel()) {
     val heroes by vm.heroes.collectAsState()
     var expandedId by remember { mutableStateOf<Int?>(null) }
 
-    LazyVerticalGrid(columns = GridCells.Fixed(5), userScrollEnabled = true, modifier = Modifier.fillMaxSize()) {
+    LazyVerticalGrid(
+        columns = GridCells.Fixed(5),
+        userScrollEnabled = true,
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(4.dp),
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp)
+    ) {
         itemsIndexed(heroes) { index, hero ->
-            val col = index % 5
             val isExpanded = (expandedId == hero.id)
-            Box(modifier = Modifier
-                .padding(4.dp)
-                .animateContentSize()
-                .clickable { expandedId = if (isExpanded) null else hero.id }
+            
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .animateContentSize(
+                        animationSpec = spring(
+                            dampingRatio = Spring.DampingRatioMediumBouncy,
+                            stiffness = Spring.StiffnessLow
+                        )
+                    )
+                    .clickable { 
+                        expandedId = if (isExpanded) null else hero.id 
+                    },
+                colors = androidx.compose.material3.CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceVariant
+                )
             ) {
-                Card(Modifier.fillMaxWidth()) {
-                    Column(Modifier.padding(4.dp)) {
-                        // hero image
-                        val resId = LocalContext.current.resources.getIdentifier(hero.image, "drawable", LocalContext.current.packageName)
-                        Image(painter = painterResource(resId), contentDescription = hero.name, modifier = Modifier.size(48.dp))
-                        Text(hero.name)
-                        if (isExpanded) {
-                            // Expanded area: show ultimate cooldown details
-                            Column(
-                                modifier = Modifier.padding(4.dp),
-                                horizontalAlignment = Alignment.CenterHorizontally
-                            ) {
-                                Text(
-                                    text = hero.ultimate.name,
-                                    fontSize = 10.sp,
-                                    fontWeight = FontWeight.Bold
-                                )
-                                Text(
-                                    text = "L1: ${hero.ultimate.cdLevel1}s",
-                                    fontSize = 8.sp
-                                )
-                                Text(
-                                    text = "L2: ${hero.ultimate.cdLevel2}s",
-                                    fontSize = 8.sp
-                                )
-                                Text(
-                                    text = "L3: ${hero.ultimate.cdLevel3}s",
-                                    fontSize = 8.sp
-                                )
-                            }
+                Column(
+                    modifier = Modifier.padding(8.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    // hero image
+                    val resId = LocalContext.current.resources.getIdentifier(
+                        hero.image, "drawable", LocalContext.current.packageName
+                    )
+                    Image(
+                        painter = painterResource(resId),
+                        contentDescription = hero.name,
+                        modifier = Modifier.size(48.dp)
+                    )
+                    Text(
+                        text = hero.name,
+                        fontSize = 10.sp,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.padding(top = 4.dp)
+                    )
+                    
+                    AnimatedVisibility(
+                        visible = isExpanded,
+                        enter = fadeIn() + expandVertically(),
+                        exit = fadeOut() + shrinkVertically()
+                    ) {
+                        Column(
+                            modifier = Modifier.padding(top = 8.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            Text(
+                                text = hero.ultimate.name,
+                                fontSize = 10.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.primary,
+                                modifier = Modifier.padding(bottom = 4.dp)
+                            )
+                            Text(
+                                text = "L1: ${hero.ultimate.cdLevel1}s",
+                                fontSize = 9.sp,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                            Text(
+                                text = "L2: ${hero.ultimate.cdLevel2}s",
+                                fontSize = 9.sp,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                            Text(
+                                text = "L3: ${hero.ultimate.cdLevel3}s",
+                                fontSize = 9.sp,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
                         }
                     }
                 }

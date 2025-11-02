@@ -1,24 +1,32 @@
 package com.example.kotlinandroidoverlayapponhomescreen.viewmodel
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import android.content.Intent
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kotlinandroidoverlayapponhomescreen.data.*
 import com.example.kotlinandroidoverlayapponhomescreen.repository.SpellRepository
+import com.example.kotlinandroidoverlayapponhomescreen.storage.TimerStorage
 import com.example.kotlinandroidoverlayapponhomescreen.utils.TimerUtils
 import com.example.kotlinandroidoverlayapponhomescreen.utils.Constants
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
-class TimerViewModel: ViewModel() {
+class TimerViewModel(application: Application): AndroidViewModel(application) {
     private val spellRepository = SpellRepository()
     private val defaultSpells = spellRepository.getAllSpells()
-    private val _timers = MutableStateFlow<List<BattleTimer>>(TimerUtils.createDefaultTimers())
+    private val storage = TimerStorage(application)
+    
+    // Load saved timers or use defaults
+    private val _timers = MutableStateFlow<List<BattleTimer>>(
+        storage.loadTimers() ?: TimerUtils.createDefaultTimers()
+    )
     val timers: StateFlow<List<BattleTimer>> = _timers.asStateFlow()
 
     private val _isSpellPickerOpen = MutableStateFlow(false)
     val isSpellPickerOpen = _isSpellPickerOpen.asStateFlow()
 
-    private val _overlayShowing = MutableStateFlow(false)
+    private val _overlayShowing = MutableStateFlow(storage.loadOverlayShowing())
     val overlayShowing = _overlayShowing.asStateFlow()
 
     private val _selectedTimerIndex = MutableStateFlow(0)
@@ -28,6 +36,25 @@ class TimerViewModel: ViewModel() {
 
     init {
         startTicker()
+        // Save timers whenever they change
+        viewModelScope.launch {
+            _timers.collect { timers ->
+                storage.saveTimers(timers)
+                // Broadcast overlay update
+                broadcastOverlayUpdate()
+            }
+        }
+        // Save overlay state when it changes
+        viewModelScope.launch {
+            _overlayShowing.collect { showing ->
+                storage.saveOverlayShowing(showing)
+            }
+        }
+    }
+    
+    private fun broadcastOverlayUpdate() {
+        val intent = Intent(Constants.ACTION_UPDATE_OVERLAY)
+        getApplication<Application>().sendBroadcast(intent)
     }
 
     private fun startTicker() {
@@ -67,6 +94,14 @@ class TimerViewModel: ViewModel() {
         t.isRunning = !t.isRunning
         current[index] = t
         _timers.value = current
+        broadcastOverlayUpdate()
+    }
+    
+    // Called from overlay service when a timer is tapped
+    fun onOverlayTimerTapped(index: Int) {
+        if (index in 0..4) {
+            onTimerClicked(index)
+        }
     }
 
     fun openSpellPicker(index: Int) { 
@@ -85,6 +120,7 @@ class TimerViewModel: ViewModel() {
         t.remainingSeconds = t.maxSeconds
         current[idx] = t
         _timers.value = current
+        broadcastOverlayUpdate()
     }
 
     fun setHasPYT(timerId: Int, has: Boolean) {
@@ -96,6 +132,7 @@ class TimerViewModel: ViewModel() {
         if (t.remainingSeconds > t.maxSeconds) t.remainingSeconds = t.maxSeconds
         current[timerId] = t
         _timers.value = current
+        broadcastOverlayUpdate()
     }
 
     fun toggleOverlay() { _overlayShowing.value = !_overlayShowing.value }

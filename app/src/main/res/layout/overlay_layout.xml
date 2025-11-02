@@ -3,51 +3,57 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="@android:color/transparent">
+    android:background="@android:color/transparent"
+    android:padding="4dp">
 
     <ImageButton
         android:id="@+id/hourglass_0"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_margin="2dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="1dp"
         android:background="@android:color/transparent"
         android:src="@drawable/hourglass_full"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:contentDescription="GOLD timer" />
 
     <ImageButton
         android:id="@+id/hourglass_1"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_margin="2dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="1dp"
         android:background="@android:color/transparent"
         android:src="@drawable/hourglass_full"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:contentDescription="EXP timer" />
 
     <ImageButton
         android:id="@+id/hourglass_2"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_margin="2dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="1dp"
         android:background="@android:color/transparent"
         android:src="@drawable/hourglass_full"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:contentDescription="JUNGLE timer" />
 
     <ImageButton
         android:id="@+id/hourglass_3"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_margin="2dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="1dp"
         android:background="@android:color/transparent"
         android:src="@drawable/hourglass_full"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:contentDescription="MID timer" />
 
     <ImageButton
         android:id="@+id/hourglass_4"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_margin="2dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="1dp"
         android:background="@android:color/transparent"
         android:src="@drawable/hourglass_full"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:contentDescription="ROAM timer" />
 
 </LinearLayout>

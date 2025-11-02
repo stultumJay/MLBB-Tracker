@@ -5,8 +5,13 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.app.Service
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.graphics.PixelFormat
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffColorFilter
 import android.os.Build
 import android.os.IBinder
 import android.view.Gravity
@@ -17,12 +22,17 @@ import android.widget.ImageButton
 import androidx.core.app.NotificationCompat
 import com.example.kotlinandroidoverlayapponhomescreen.MainActivity
 import com.example.kotlinandroidoverlayapponhomescreen.R
+import com.example.kotlinandroidoverlayapponhomescreen.storage.TimerStorage
 import com.example.kotlinandroidoverlayapponhomescreen.utils.Constants
+import com.example.kotlinandroidoverlayapponhomescreen.utils.TimerUtils
 
 class OverlayService : Service() {
     private lateinit var windowManager: WindowManager
     private var overlayView: View? = null
     private val CHANNEL_ID = Constants.OVERLAY_CHANNEL_ID
+    private val storage = TimerStorage(this)
+    private val buttons = mutableListOf<ImageButton>()
+    private var updateReceiver: BroadcastReceiver? = null
 
     override fun onCreate() {
         super.onCreate()
@@ -44,30 +54,76 @@ class OverlayService : Service() {
         )
         params.gravity = Gravity.TOP or Gravity.CENTER_HORIZONTAL
         params.x = 0
-        params.y = 200
+        params.y = 100  // Moved up for less obstruction
 
         windowManager.addView(overlayView, params)
         setupClickListeners()
+        registerUpdateReceiver()
+        updateIcons()
     }
 
     private fun setupClickListeners() {
         overlayView?.let { view ->
+            buttons.clear()
             // Setup click listeners on the 5 hourglass buttons
             for (i in 0..4) {
                 val buttonId = resources.getIdentifier("hourglass_$i", "id", packageName)
                 val button = view.findViewById<ImageButton>(buttonId)
-                button?.setOnClickListener {
-                    // Open the app when hourglass is clicked
-                    val intent = Intent(this, MainActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
-                    startActivity(intent)
+                button?.let { btn ->
+                    buttons.add(btn)
+                    btn.setOnClickListener {
+                        // Send broadcast to toggle timer
+                        val intent = Intent(Constants.ACTION_OVERLAY_TIMER_TAP).apply {
+                            putExtra(Constants.EXTRA_TIMER_INDEX, i)
+                        }
+                        sendBroadcast(intent)
+                        // Also open app to show full UI
+                        val activityIntent = Intent(this, MainActivity::class.java)
+                        activityIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+                        startActivity(activityIntent)
+                    }
                 }
+            }
+        }
+    }
+    
+    private fun registerUpdateReceiver() {
+        updateReceiver = object : BroadcastReceiver() {
+            override fun onReceive(context: Context?, intent: Intent?) {
+                when (intent?.action) {
+                    Constants.ACTION_UPDATE_OVERLAY -> updateIcons()
+                }
+            }
+        }
+        val filter = IntentFilter(Constants.ACTION_UPDATE_OVERLAY)
+        registerReceiver(updateReceiver, filter)
+    }
+    
+    private fun updateIcons() {
+        val timers = storage.loadTimers() ?: return
+        buttons.forEachIndexed { index, button ->
+            if (index < timers.size) {
+                val timer = timers[index]
+                val isReady = TimerUtils.isTimerReady(timer.remainingSeconds)
+                val iconName = if (isReady) "hourglass_empty" else "hourglass_full"
+                val iconResId = resources.getIdentifier(iconName, "drawable", packageName)
+                
+                button.setImageResource(iconResId)
+                
+                // Apply color filter based on state
+                val color = when {
+                    isReady -> Constants.TIMER_READY_COLOR
+                    timer.isRunning -> Constants.TIMER_RUNNING_COLOR
+                    else -> Constants.TIMER_PAUSED_COLOR
+                }
+                button.colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.SRC_ATOP)
             }
         }
     }
 
     override fun onDestroy() {
         super.onDestroy()
+        updateReceiver?.let { unregisterReceiver(it) }
         overlayView?.let { windowManager.removeView(it) }
     }
 

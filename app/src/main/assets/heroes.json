@@ -26,7 +26,7 @@
     "name": "Alice",
     "image": "alice",
     "ultimate": {
-      "name": "Blood Awe",
+      "name": "Blood Ode",
       "cdLevel1": 45,
       "cdLevel2": 42,
       "cdLevel3": 39
@@ -34,17 +34,28 @@
   },
   {
     "id": 4,
-    "name": "Angela",
-    "image": "angela",
+    "name": "Alpha",
+    "image": "alpha",
     "ultimate": {
-      "name": "Heartguard",
-      "cdLevel1": 30,
-      "cdLevel2": 28,
-      "cdLevel3": 26
+      "name": "Spear of Alpha",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
     }
   },
   {
     "id": 5,
+    "name": "Angela",
+    "image": "angela",
+    "ultimate": {
+      "name": "Heartguard",
+      "cdLevel1": 70,
+      "cdLevel2": 65,
+      "cdLevel3": 60
+    }
+  },
+  {
+    "id": 6,
     "name": "Argus",
     "image": "argus",
     "ultimate": {
@@ -55,7 +66,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Atlas",
     "image": "atlas",
     "ultimate": {
@@ -66,7 +77,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Aurora",
     "image": "aurora",
     "ultimate": {
@@ -77,7 +88,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Balmond",
     "image": "balmond",
     "ultimate": {
@@ -88,18 +99,18 @@
     }
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Bane",
     "image": "bane",
     "ultimate": {
-      "name": "Deadly Catch",
+      "name": "Nightmare Assault",
       "cdLevel1": 30,
       "cdLevel2": 27,
       "cdLevel3": 24
     }
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Barats",
     "image": "barats",
     "ultimate": {
@@ -110,7 +121,29 @@
     }
   },
   {
-    "id": 11,
+    "id": 12,
+    "name": "Baxia",
+    "image": "baxia",
+    "ultimate": {
+      "name": "Okta's Triumph",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 13,
+    "name": "Beatrix",
+    "image": "beatrix",
+    "ultimate": {
+      "name": "Sniper Mode: M20 Magnum",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 14,
     "name": "Belerick",
     "image": "belerick",
     "ultimate": {
@@ -121,7 +154,51 @@
     }
   },
   {
-    "id": 12,
+    "id": 15,
+    "name": "Benedetta",
+    "image": "benedetta",
+    "ultimate": {
+      "name": "Alecto: Final Blow",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 16,
+    "name": "Berthe",
+    "image": "berthe",
+    "ultimate": {
+      "name": "Death March",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 17,
+    "name": "Bick",
+    "image": "bick",
+    "ultimate": {
+      "name": "Shadow Strike",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 18,
+    "name": "Brody",
+    "image": "brody",
+    "ultimate": {
+      "name": "Antihero Howl",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 19,
     "name": "Bruno",
     "image": "bruno",
     "ultimate": {
@@ -132,7 +209,29 @@
     }
   },
   {
-    "id": 13,
+    "id": 20,
+    "name": "Budy",
+    "image": "budy",
+    "ultimate": {
+      "name": "Bomb Voyage",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 21,
+    "name": "Cade",
+    "image": "cade",
+    "ultimate": {
+      "name": "Lightwheel Snare",
+      "cdLevel1": 50,
+      "cdLevel2": 45,
+      "cdLevel3": 40
+    }
+  },
+  {
+    "id": 22,
     "name": "Carmilla",
     "image": "carmilla",
     "ultimate": {
@@ -143,7 +242,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 23,
     "name": "Cecilion",
     "image": "cecilion",
     "ultimate": {
@@ -154,7 +253,18 @@
     }
   },
   {
-    "id": 15,
+    "id": 24,
+    "name": "Chang'e",
+    "image": "change",
+    "ultimate": {
+      "name": "Crescent Moon",
+      "cdLevel1": 20,
+      "cdLevel2": 18,
+      "cdLevel3": 16
+    }
+  },
+  {
+    "id": 25,
     "name": "Chou",
     "image": "chou",
     "ultimate": {
@@ -162,6 +272,1161 @@
       "cdLevel1": 30,
       "cdLevel2": 28,
       "cdLevel3": 26
+    }
+  },
+  {
+    "id": 26,
+    "name": "Clint",
+    "image": "clint",
+    "ultimate": {
+      "name": "Quick Draw",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 27,
+    "name": "Claude",
+    "image": "claude",
+    "ultimate": {
+      "name": "Blazing Duet",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 28,
+    "name": "Cici",
+    "image": "cici",
+    "ultimate": {
+      "name": "Superstar Rhapsody",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 29,
+    "name": "Cynn",
+    "image": "cynn",
+    "ultimate": {
+      "name": "Moonlight Beyond",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 30,
+    "name": "Cyclops",
+    "image": "cyclops",
+    "ultimate": {
+      "name": "Star Power Lockdown",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 31,
+    "name": "Dagg er",
+    "image": "dagger",
+    "ultimate": {
+      "name": "Fatal",
+      "cdLevel1": 20,
+      "cdLevel2": 18,
+      "cdLevel3": 16
+    }
+  },
+  {
+    "id": 32,
+    "name": "Dyrroth",
+    "image": "dyrroth",
+    "ultimate": {
+      "name": "Wrath of the Abyssal King",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 33,
+    "name": "Eudora",
+    "image": "eudora",
+    "ultimate": {
+      "name": "Thunder's Wrath",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 34,
+    "name": "Fanny",
+    "image": "fanny",
+    "ultimate": {
+      "name": "Cut Throat",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 35,
+    "name": "Faramis",
+    "image": "faramis",
+    "ultimate": {
+      "name": "Undead Army",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 36,
+    "name": "Floryn",
+    "image": "floryn",
+    "ultimate": {
+      "name": "Double Blossom",
+      "cdLevel1": 30,
+      "cdLevel2": 28,
+      "cdLevel3": 26
+    }
+  },
+  {
+    "id": 37,
+    "name": "Franco",
+    "image": "franco",
+    "ultimate": {
+      "name": "Bloody Hunt",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 38,
+    "name": "Freya",
+    "image": "freya",
+    "ultimate": {
+      "name": "Valkyrie Descent",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 39,
+    "name": "Gatotkaca",
+    "image": "gatotkaca",
+    "ultimate": {
+      "name": "Metal Immortal",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 40,
+    "name": "Gord",
+    "image": "gord",
+    "ultimate": {
+      "name": "Mystic Gush",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 41,
+    "name": "Grock",
+    "image": "grock",
+    "ultimate": {
+      "name": "Wild Charge",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 42,
+    "name": "Guinevere",
+    "image": "guinevere",
+    "ultimate": {
+      "name": "Violet Requiem",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 43,
+    "name": "Gusion",
+    "image": "gusion",
+    "ultimate": {
+      "name": "Incandescence",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 44,
+    "name": "Hanabi",
+    "image": "hanabi",
+    "ultimate": {
+      "name": "Higanbana",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 45,
+    "name": "Harith",
+    "image": "harith",
+    "ultimate": {
+      "name": "Chrono Dash",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 46,
+    "name": "Harley",
+    "image": "harley",
+    "ultimate": {
+      "name": "Deadly Magic",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 47,
+    "name": "Hayabusa",
+    "image": "hayabusa",
+    "ultimate": {
+      "name": "Ougi: Shadow Kill",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 48,
+    "name": "Helcurt",
+    "image": "helcurt",
+    "ultimate": {
+      "name": "Deadly Stinger",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 49,
+    "name": "Hilda",
+    "image": "hilda",
+    "ultimate": {
+      "name": "Art of Despair",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 50,
+    "name": "Hylos",
+    "image": "hylos",
+    "ultimate": {
+      "name": "Glamour Charge",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 51,
+    "name": "Irithel",
+    "image": "irithel",
+    "ultimate": {
+      "name": "Force of the Queen",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 52,
+    "name": "Jawhead",
+    "image": "jawhead",
+    "ultimate": {
+      "name": "Final Punch",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 53,
+    "name": "Johnson",
+    "image": "johnson",
+    "ultimate": {
+      "name": "Rapid Touchdown",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 54,
+    "name": "Jovyd",
+    "image": "jovyd",
+    "ultimate": {
+      "name": "Thunderous Strike",
+      "cdLevel1": 45,
+      "cdLevel2": 42,
+      "cdLevel3": 39
+    }
+  },
+  {
+    "id": 55,
+    "name": "Julian",
+    "image": "julian",
+    "ultimate": {
+      "name": "Phantom Step",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 56,
+    "name": "Kadita",
+    "image": "kadita",
+    "ultimate": {
+      "name": "Rough Waves",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 57,
+    "name": "Kaja",
+    "image": "kaja",
+    "ultimate": {
+      "name": "Divine Judgment",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 58,
+    "name": "Kall",
+    "image": "kall",
+    "ultimate": {
+      "name": "Eclipse",
+      "cdLevel1": 50,
+      "cdLevel2": 46,
+      "cdLevel3": 42
+    }
+  },
+  {
+    "id": 59,
+    "name": "Kamil",
+    "image": "kamil",
+    "ultimate": {
+      "name": "Ice Seal",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 60,
+    "name": "Karrie",
+    "image": "karrie",
+    "ultimate": {
+      "name": "Phantom Step",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 61,
+    "name": "Karina",
+    "image": "karina",
+    "ultimate": {
+      "name": "Shadow Assault",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 62,
+    "name": "Karsa",
+    "image": "karsa",
+    "ultimate": {
+      "name": "Soul Scroll",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 63,
+    "name": "Katarina",
+    "image": "katarina",
+    "ultimate": {
+      "name": "Execution",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 64,
+    "name": "Kimmy",
+    "image": "kimmy",
+    "ultimate": {
+      "name": "Chemical Rage",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 65,
+    "name": "Gloo",
+    "image": "gloo",
+    "ultimate": {
+      "name": "Split",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 66,
+    "name": "Lancelot",
+    "image": "lancelot",
+    "ultimate": {
+      "name": "Phantom Execution",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 67,
+    "name": "Lapu-Lapu",
+    "image": "lapulapu",
+    "ultimate": {
+      "name": "Bravest Fighter",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 68,
+    "name": "Layla",
+    "image": "layla",
+    "ultimate": {
+      "name": "Righteous Glory",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 69,
+    "name": "Lesley",
+    "image": "lesley",
+    "ultimate": {
+      "name": "Ultimate Snipe",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 70,
+    "name": "Lunox",
+    "image": "lunox",
+    "ultimate": {
+      "name": "Order and Chaos",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 71,
+    "name": "Lylia",
+    "image": "lylia",
+    "ultimate": {
+      "name": "Black Shoe",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 72,
+    "name": "Martis",
+    "image": "martis",
+    "ultimate": {
+      "name": "Decimation",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 73,
+    "name": "Masha",
+    "image": "masha",
+    "ultimate": {
+      "name": "Lightning March",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 74,
+    "name": "Mathilda",
+    "image": "mathilda",
+    "ultimate": {
+      "name": "Guiding Wind",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 75,
+    "name": "Melissa",
+    "image": "melissa",
+    "ultimate": {
+      "name": "Elegant Finale",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 76,
+    "name": "Minsitthar",
+    "image": "minsitthar",
+    "ultimate": {
+      "name": "Chakram of Divine Retribution",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 77,
+    "name": "Minotaur",
+    "image": "minotaur",
+    "ultimate": {
+      "name": "Ancestral Guidance",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 78,
+    "name": "Moskov",
+    "image": "moskov",
+    "ultimate": {
+      "name": "Spear of Misery",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 79,
+    "name": "Miya",
+    "image": "miya",
+    "ultimate": {
+      "name": "Hidden Moonlight",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 80,
+    "name": "Mondo",
+    "image": "mondo",
+    "ultimate": {
+      "name": "World Eater",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 81,
+    "name": "Natalia",
+    "image": "natalia",
+    "ultimate": {
+      "name": "The Hunt",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 82,
+    "name": "Nana",
+    "image": "nana",
+    "ultimate": {
+      "name": "Molina Sling",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 83,
+    "name": "Nolan",
+    "image": "nolan",
+    "ultimate": {
+      "name": "Gravity Vortex",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 84,
+    "name": "Odette",
+    "image": "odette",
+    "ultimate": {
+      "name": "Swan Song",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 85,
+    "name": "Paquito",
+    "image": "paquito",
+    "ultimate": {
+      "name": "Knockout Strike",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 86,
+    "name": "Pharsa",
+    "image": "pharsa",
+    "ultimate": {
+      "name": "Feathered Air Strike",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 87,
+    "name": "Phoveus",
+    "image": "phoveus",
+    "ultimate": {
+      "name": "Astaros Eye",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 88,
+    "name": "Pipin",
+    "image": "pipin",
+    "ultimate": {
+      "name": "Mischief Maker",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 89,
+    "name": "Popol and Kupa",
+    "image": "popol",
+    "ultimate": {
+      "name": "Beast Hunt",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 90,
+    "name": "Rafaela",
+    "image": "rafaela",
+    "ultimate": {
+      "name": "Holy Healing",
+      "cdLevel1": 50,
+      "cdLevel2": 45,
+      "cdLevel3": 40
+    }
+  },
+  {
+    "id": 91,
+    "name": "Roger",
+    "image": "roger",
+    "ultimate": {
+      "name": "Bloody Howl",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 92,
+    "name": "Ruby",
+    "image": "ruby",
+    "ultimate": {
+      "name": "Don't Run, Wolf King",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 93,
+    "name": "Saber",
+    "image": "saber",
+    "ultimate": {
+      "name": "Triple Sweep",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 94,
+    "name": "Selena",
+    "image": "selena",
+    "ultimate": {
+      "name": "Abyssal Trap",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 95,
+    "name": "Silvanna",
+    "image": "silvanna",
+    "ultimate": {
+      "name": "Fatal Cross",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 96,
+    "name": "Suyou",
+    "image": "suyou",
+    "ultimate": {
+      "name": "Soul Sever",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 97,
+    "name": "Sun",
+    "image": "sun",
+    "ultimate": {
+      "name": "Endless Variety",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 98,
+    "name": "Suyou",
+    "image": "suyou",
+    "ultimate": {
+      "name": "Soul Sever",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 99,
+    "name": "Tigreal",
+    "image": "tigreal",
+    "ultimate": {
+      "name": "Implosion",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 100,
+    "name": "Uranus",
+    "image": "uranus",
+    "ultimate": {
+      "name": "Gravity Core",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 101,
+    "name": "Valentina",
+    "image": "valentina",
+    "ultimate": {
+      "name": "The Will of the World",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 102,
+    "name": "Valir",
+    "image": "valir",
+    "ultimate": {
+      "name": "Hellfire",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 103,
+    "name": "Vexana",
+    "image": "vexana",
+    "ultimate": {
+      "name": "Nether Snare",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 104,
+    "name": "Wanwan",
+    "image": "wanwan",
+    "ultimate": {
+      "name": "Flicker Strike",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 105,
+    "name": "X.Borg",
+    "image": "xborg",
+    "ultimate": {
+      "name": "Fire Missiles",
+      "cdLevel1": 30,
+      "cdLevel2": 27,
+      "cdLevel3": 24
+    }
+  },
+  {
+    "id": 106,
+    "name": "Xavier",
+    "image": "xavier",
+    "ultimate": {
+      "name": "Firmament Fall",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 107,
+    "name": "Yi Sun-shin",
+    "image": "yisunshin",
+    "ultimate": {
+      "name": "Sky Feather",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 108,
+    "name": "Yin",
+    "image": "yin",
+    "ultimate": {
+      "name": "Ultimate",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 109,
+    "name": "Yve",
+    "image": "yve",
+    "ultimate": {
+      "name": "Real World",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 110,
+    "name": "Yu Zhong",
+    "image": "yuzhong",
+    "ultimate": {
+      "name": "Dragon Tail",
+      "cdLevel1": 85,
+      "cdLevel2": 75,
+      "cdLevel3": 65
+    }
+  },
+  {
+    "id": 111,
+    "name": "Zilong",
+    "image": "zilong",
+    "ultimate": {
+      "name": "Ultimate Spear",
+      "cdLevel1": 35,
+      "cdLevel2": 32,
+      "cdLevel3": 29
+    }
+  },
+  {
+    "id": 112,
+    "name": "Zhask",
+    "image": "zhask",
+    "ultimate": {
+      "name": "Nightmaric Spawn",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 113,
+    "name": "Zhuxin",
+    "image": "zhuxin",
+    "ultimate": {
+      "name": "Celestial Web",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 114,
+    "name": "Zlatan",
+    "image": "zlatan",
+    "ultimate": {
+      "name": "The Protector",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 115,
+    "name": "Arlott",
+    "image": "arlott",
+    "ultimate": {
+      "name": "Executioner",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 116,
+    "name": "Joy",
+    "image": "joy",
+    "ultimate": {
+      "name": "Prank Army",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 117,
+    "name": "Yin",
+    "image": "yin",
+    "ultimate": {
+      "name": "Reverse",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 118,
+    "name": "Novaria",
+    "image": "novaria",
+    "ultimate": {
+      "name": "Macrocosm",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 119,
+    "name": "Ixia",
+    "image": "ixia",
+    "ultimate": {
+      "name": "Lightwheel Snare",
+      "cdLevel1": 50,
+      "cdLevel2": 45,
+      "cdLevel3": 40
+    }
+  },
+  {
+    "id": 120,
+    "name": "Chip",
+    "image": "chip",
+    "ultimate": {
+      "name": "Dynamic Launch",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 121,
+    "name": "Fredrinn",
+    "image": "fredrinn",
+    "ultimate": {
+      "name": "Execution Strike",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 122,
+    "name": "Yve",
+    "image": "yve",
+    "ultimate": {
+      "name": "Force Concerto",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 123,
+    "name": "Dins",
+    "image": "dins",
+    "ultimate": {
+      "name": "Ruinous Strike",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 124,
+    "name": "Faris",
+    "image": "faris",
+    "ultimate": {
+      "name": "Death's Door",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 125,
+    "name": "Lukas",
+    "image": "lukas",
+    "ultimate": {
+      "name": "Radiant Strike",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 126,
+    "name": "Cici",
+    "image": "cici",
+    "ultimate": {
+      "name": "Rock and Roll",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 127,
+    "name": "Yin",
+    "image": "yin",
+    "ultimate": {
+      "name": "Yin Yang Overturn",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 128,
+    "name": "Nolan",
+    "image": "nolan",
+    "ultimate": {
+      "name": "Gravity Surge",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 129,
+    "name": "Zhuxin",
+    "image": "zhuxin",
+    "ultimate": {
+      "name": "Jade Emperor's Wish",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
+    }
+  },
+  {
+    "id": 130,
+    "name": "Vexana",
+    "image": "vexana",
+    "ultimate": {
+      "name": "Malefic Curse",
+      "cdLevel1": 40,
+      "cdLevel2": 37,
+      "cdLevel3": 34
     }
   }
 ]
